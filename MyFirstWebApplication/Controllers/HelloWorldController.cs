@@ -9,9 +9,9 @@ namespace MyFirstWebApplication.Controllers
     public class HelloWorldController : Controller
     {
         // GET: HelloWorld
-        public string Index()
+        public string Index(string firstName, string lastName)
         {
-            return "Hello World";
+            return $"Hello World { firstName} { lastName}!";
         }
     }
 }
